@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: white;
+        }
+
+        body {
+            font-family: "Montserrat Subrayada", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+
+        }
+
+        header {
+            padding-top: 10px;
+            display: flex;
+            height: 70px;
+            justify-content: space-around;
+            border-bottom: 1px solid black;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li a {
+
+            margin: 0 15px;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 50px;
+        }
+
+        main {
+            display: flex;
+            height: 90vh;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0 150px;
+            flex-wrap: wrap;
+        }
+
+        .contentleft {
+            flex: 1;
+        }
+
+        .contentmid {
+            flex: 2;
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 31.5px;
+            margin: 30px 0px;
+        }
+
+        .contentright {
+            flex: 1;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-[#2c2c2c]">
+    <header>
+        <div class="logo">logo</div>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">OFFERS</a></li>
+                    <li><a href="#">BUY NOW</a></li>
+                    <li><a href="#">SELL NOW</a></li>
+                    <li><a href="#">ABOUT US </a></li>
+                    <li><a href="#"
+                            class="bg-[#2c2c2c] text-white hover:bg-white hover:text-[#2c2c2c] transition duration-300">SIGN
+                            UP</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contentleft">Mercury</div>
+        <div class="contentmid">Mercury—the smallest planet in our solar
+            system and
+            nearest
+            to the
+            Sun—is only slightly
+            larger than Earth's Moon. Its surface is covered in tens of thousands of impact craters.
+
+            From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from
+            Earth, and the sunlight would be as much as 11 times brighter.
+
+            Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system— that title belongs
+            to nearby Venus, thanks to its dense atmosphere. But Mercury is the fastest planet, zipping around the Sun
+            every 88 Earth days. Mercury is appropriately named for the swiftest of the ancient Roman gods.
+            <button
+                class="mt-12 px-8 py-4 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg transition duration-300">buy
+                now</button>
+        </div>
+        <div class="contentright">
+            <img src="About.png" alt="Mercury" class="w-64 h-64 md:w-96 md:h-96 lg:w-128 lg:h-128 object-cover">
+        </div>
+    </main>
+</body>
+
+</html>
